@@ -13,7 +13,7 @@ h1{
     text-align: center;
 }
 .container{
-    width: 40%;
+    width: 60%;
     margin: auto;
 }
 
@@ -23,7 +23,7 @@ label,input{
 }
 
 input{
-    margin-top: 0.5rem;
+    margin-top: auto;
 }
 
 #check-btn{
