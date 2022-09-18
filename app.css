@@ -29,6 +29,7 @@ input{
 #check-btn{
     margin-top: 1rem;
     display: block;
+    border-radius: 0.5rem;
 }
 
 #output-line{
