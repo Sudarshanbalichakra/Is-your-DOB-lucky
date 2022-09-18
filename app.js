@@ -6,12 +6,10 @@ const outputBox=document.querySelector("#output-line")
 
 function comapreVlaue(sum,inputNumber){
     if (sum%inputNumber===0){
-      outputBox.innerText="hey,your birthday is lucky !!!";
+      outputBox.innerText="hey,your birthday is lucky 😎 !!!";
     }else{
-        outputBox.innerText="sorry,your birthday is not lucky.";
-    }
-      
-    
+        outputBox.innerText="sorry,your birthday is not lucky ☹️.";
+    }  
 }
 
 
