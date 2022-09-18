@@ -1,0 +1,36 @@
+:root{
+    --var-primarycolor:black;
+    --var-color:green;
+
+}
+
+body{
+    color:black;
+    background-color:#778899;
+}
+
+h1{
+    text-align: center;
+}
+.container{
+    width: 40%;
+    margin: auto;
+}
+
+label,input{
+    display: block;
+    width: 80%;
+}
+
+input{
+    margin-top: 0.5rem;
+}
+
+#check-btn{
+    margin-top: 1rem;
+    display: block;
+}
+
+#output-line{
+    padding: 1rem;
+}

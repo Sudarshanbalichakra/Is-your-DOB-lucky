@@ -1,14 +1,16 @@
 const inputDob=document.querySelector("#input-dob");
 const inputNumber=document.querySelector("#input-no");
 const checkButton=document.querySelector("#check-btn");
-const outPut=document.querySelector("#output-line")
+const outputBox=document.querySelector("#output-line")
 
-checkButton.addEventListener("click",checkNoIslucky)
 
-function comapreVlaue(sum,luckyNumber){
-    if (sum%luckyNumber===0){
-        outPut.innerText("hey,your birthday is lucky !!!");
-    }outPut.innerText("sorry,your birthday is not lucky.");
+function comapreVlaue(sum,inputNumber){
+    if (sum%inputNumber===0){
+      outputBox.innerText="hey,your birthday is lucky !!!";
+    }else{
+        outputBox.innerText="sorry,your birthday is not lucky.";
+    }
+      
     
 }
 
@@ -16,15 +18,18 @@ function comapreVlaue(sum,luckyNumber){
 function checkNoIslucky(){
     const dob=inputDob.value;
     const sum=calculateSum(dob);
-    comapreVlaue()
-   
+    comapreVlaue(sum,inputNumber.value)
+    console.log(inputNumber.value);
+    console.log(sum);
 }
    
 function calculateSum(dob){
     dob=dob.replaceAll("-","");
     let sum=0;
-    for(let index=0;index<dob.length;index++){
-        sum=sum+Number(dob.charAt(index))
+    for(let i=0;i<dob.length;i++){
+        sum=sum+Number(dob.charAt(i))
     }
     return sum;
 }
+
+checkButton.addEventListener("click",checkNoIslucky)
