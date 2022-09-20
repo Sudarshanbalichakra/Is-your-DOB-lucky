@@ -17,8 +17,8 @@ function checkNoIslucky(){
     const dob=inputDob.value;
     const sum=calculateSum(dob);
     comapreVlaue(sum,inputNumber.value)
-    console.log(inputNumber.value);
-    console.log(sum);
+    // console.log(inputNumber.value);
+    // console.log(sum);
 }
    
 function calculateSum(dob){
